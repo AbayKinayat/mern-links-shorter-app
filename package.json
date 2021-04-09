@@ -1,0 +1,34 @@
+{
+  "name": "mern-test",
+  "version": "1.0.0",
+  "description": "MERN stack",
+  "main": "App.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "client:intall": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=production concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "Kinayat Abay <kinayat.abay@mail.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.2",
+    "shortid": "^2.2.16"
+  },
+  "_id": "mern-test@1.0.0",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
